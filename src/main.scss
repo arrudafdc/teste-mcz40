@@ -1,0 +1,22 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$mcz-principal: #0053BF;
+$mcz-destaque: #FD9800;
+$mcz-agenda: #7C4EF5;
+$mcz-noticia: #7C4EF5;
+$mcz-foto: #F85CAD;
+
+$custom-colors: (
+  "mcz-principal": $mcz-principal,
+  "mcz-destaque": $mcz-destaque,
+  "mcz-agenda": $mcz-agenda,
+  "mcz-noticia": $mcz-noticia,
+  "mcz-foto": $mcz-foto,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$enable-rounded: false;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
